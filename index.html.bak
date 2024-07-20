@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statics</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.css">
+
+
+</head>
+<style>
+       <style>
+        body {
+            background-color:#000;
+            margin:0;
+            overflow:hidden;
+            padding:0;
+          }
+          
+          .screen {
+            animation:colorPulse 5s infinite ease-in-out;
+            background-image:radial-gradient(#444, #111);
+            box-shadow:0 0 5vmin 1vmin #000 inset;
+            box-sizing:border-box left-box;
+            font-family:'Fira Mono', monospace;
+            font-size:20px;
+            height:100vh;
+            overflow:hidden;
+            padding:10vmin;
+            width:100vw;
+          }
+          
+          .screen:before {
+            animation:wave 10s infinite ease-in-out;
+            content:"";
+            height:20vh;
+            left:0;
+            opacity:.5;
+            position:absolute;
+            right:0;
+            z-index:1;
+          }
+          
+          .screen:after {
+            background-image:linear-gradient(transparent, transparent 3px, #222);
+            background-size:4px 4px;
+            bottom:0;
+            content:"";
+            left:0;
+            pointer-events:none;
+            position:absolute;
+            right:0;
+            top:0;
+            z-index:2;
+          }
+          
+          p:last-child:after {
+            animation:blink 1s infinite;
+            content:"_";
+          }
+          
+          @keyframes colorPulse {
+            0%, 100% {
+              color:#0c0;
+            }
+            48%, 52% {
+              color:#090;
+            }
+            50% {
+              color:#060;
+            }
+          }
+          
+          @keyframes wave {
+            0% {
+              box-shadow:0 -10vh 20vh #0c0;
+              top:-100vh;
+            }
+            48%, 52% {
+              box-shadow:0 -10vh 20vh #090;
+            }
+            50% {
+              box-shadow:0 -10vh 20vh #060;
+            }
+            100% {
+              box-shadow:0 -10vh 20vh #0c0;
+              top:200vh;
+            }
+          }
+          
+          @keyframes blink {
+            50% {
+              opacity:0;
+            }
+          }
+</style>
+</style>
+<body>
+    <nav class="navbar navbar-expand navbar-light">
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">ÖZELLİKLER</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inv.html" class="nav-link">EŞYALAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link">DOĞUM GÜNÜ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">TIK TIK</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#status" class="nav-link" data-toggle="tab">DOĞUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#special" class="nav-link" data-toggle="tab">GÜNÜN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#perks" class="nav-link" data-toggle="tab">KUTLU OLSUN</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="status" role="tabpanel">
+                        <div class="center-image">
+                            <img class="center-image"
+                                src="img/fallout-3-traditional-vault-boy-man-illustration-png-clipart-removebg-preview-removebg-preview.png"
+                                alt="Clipart">
+                        </div>
+
+                        <div class="stat-bars">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w100"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w100"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w100"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w100"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w100"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w50"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row stat-numbers">
+                            <div class="col-2 transparent"></div>
+                            <div class="col-2"><img class="img-responsive" src="img/ico/gun.png" alt="Gun"></div>
+                            <div class="col-1">
+                                <div class="icon"><img class="sm-image img-responsive" src="img/ico/crosshair.png"
+                                        alt="Crosshair"></div>
+                                <div class="points">10</div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-responsive helmet" src="img/ico/helmet.png" alt="Helmet">
+                            </div>
+                            <div class="col-1">
+                                <div class="icon"><img class="sm-image img-responsive" src="img/ico/bolt.png"
+                                        alt="Bolt"></div>
+                                <div class="points">10</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="icon"><img class="sm-image img-responsive" src="img/ico/radioactive.png"
+                                        alt="Radioactive"></div>
+                                <div class="points">0</div>
+                            </div>
+                            <div class="col-2 transparent"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="special" role="tabpanel">
+                        SPECIAL
+                    </div>
+                    <div class="tab-pane" id="perks" role="tabpanel">
+                        PERKS
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 20
+                <div class="level-progress">
+                    <div class="level-progress-indicator" width="70%"></div>
+                </div>
+            </div>
+            <div class="col-3 text-right">
+                20/07/2024
+            </div>
+        </div>
+    </nav>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.js"></script>
+</body>
+
+</html>

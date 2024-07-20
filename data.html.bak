@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            background-color:#000;
+            margin:0;
+            overflow:hidden;
+            padding:0;
+          }
+          
+          .screen {
+            animation:colorPulse 5s infinite ease-in-out;
+            font-family:'Fira Mono', monospace;
+            font-size:20px;
+            height:200vh;
+            overflow:visible;
+            padding:10vmin;
+            float:right;
+            width: 135vh;
+            border-left-width: 1000vh;
+            position:relative;
+          }
+          
+          .screen:before {
+            animation:wave 10s infinite ease-in-out;
+            content:"";
+            height:20vh;
+            left:0;
+            opacity:.5;
+            position:absolute;
+            right:0;
+            z-index:1;
+          }
+          
+          .screen:after {
+            background-image:linear-gradient(transparent, transparent 3px, #222);
+            background-size:4px 4px;
+            bottom:0;
+            content:"";
+            left:0;
+            pointer-events:none;
+            position:absolute;
+            right:0;
+            top:0;
+            z-index:2;
+          }
+          
+          p:last-child:after {
+            animation:blink 1s infinite;
+            content:"_";
+          }
+          
+          @keyframes colorPulse {
+            0%, 100% {
+              color:#0c0;
+            }
+            48%, 52% {
+              color:#090;
+            }
+            50% {
+              color:#060;
+            }
+          }
+          
+          @keyframes wave {
+            0% {
+              box-shadow:0 -10vh 20vh #0c0;
+              top:-100vh;
+            }
+            48%, 52% {
+              box-shadow:0 -10vh 20vh #090;
+            }
+            50% {
+              box-shadow:0 -10vh 20vh #060;
+            }
+            100% {
+              box-shadow:0 -10vh 20vh #0c0;
+              top:200vh;
+            }
+          }
+          
+          @keyframes blink {
+            50% {
+              opacity:0;
+            }
+          }
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Data</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.css">
+
+    <title>Pipboy application</title>
+    
+</head>
+
+<body>
+
+
+     <nav class="navbar navbar-expand navbar-light">
+             <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">ÖZELLİKLER</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inv.html" class="nav-link">EŞYALAR</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="data.html" class="nav-link">DOĞUM GÜNÜ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">TIK TIK</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            <div class="screen" style="align-self: auto;">
+                <p>Bö! Tekrardan bir yaşına girdin ve bir sene daha bizimle oldun! Tabii bu yolculuk bitti mi? Hayır! Gayet olduğun gibi devam ediyorsun. Tanıdığım en iyi arkadaşlardan birisin ve iyi ki annen babanı sevmiş(?) çünkü sen olmuşsun! Tekrardan daha nice yıllarla seni görmek dileği ile!</p>
+                <p style="text-align:right">Doğum Günü Kızına</p>
+              </div>
+            </div>
+    </div>
+
+
+
+ <nav class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 20
+                <div class="level-progress">
+                    <div class="level-progress-indicator" width="70%"></div>
+                </div>
+            </div>
+            <div class="col-3 text-right">
+                20/07/2024
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

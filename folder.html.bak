@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dosyalar</title>
+		<meta name="description" content="Item hover effects that reveal a colored stack behind the hovered item" />
+		<meta name="keywords" content="hover effect, reveal, hover, css, animations, anime.js, javascript, motion, ux" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="message-mobile"></div>
+			<section class="content">
+				<h2 class="content__title"></h2>
+				<div class="grid grid--effect-vega">
+					<a href="ornek1/ornek1.html" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Sen</h3>
+							<div class="column column--left">
+								<span class="column__text">Düşüncelerim</span>
+								<span class="column__text">Konu</span>
+								<span class="column__text">Sonuç</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">Arkadaş!</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Pozitif</span>
+							</div>
+						</div>
+					</a>
+					<a href="talkbot.html" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Doğum Günün</h3>
+							<div class="column column--left">
+								<span class="column__text">Düşüncelerim</span>
+								<span class="column__text">Konu</span>
+								<span class="column__text">Sonuç</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">20</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Pozitif</span>
+							</div>
+						</div>
+					</a>
+	
+			</section>
+
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+				new VegaFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+				new CastorFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+				new HamalFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+				new PolarisFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+				new AlphardFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+				new AltairFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+				new RigelFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+				new CanopusFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+				new PolluxFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+				new DenebFx(stackEl);
+			});
+		})();
+		</script>
+	</body>
+</html>

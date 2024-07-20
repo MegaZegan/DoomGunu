@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Photography Website Concept</title>
+	<meta name="description" content="A photography-inspired website layout with an expanding stack slider and a background image tilt effect" />
+	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="hero">
+			<div class="hero__back hero__back--static"></div>
+			<div class="hero__back hero__back--mover"></div>
+			<div class="hero__front"></div>
+		</div>
+
+		</header>
+		<div class="stack-slider">
+			<div class="stacks-wrapper">
+				<div class="stack">
+					<h2 class="stack-title"><a href="#" data-text="Portraits"><span>Favori Çizimlerin</span></a></h2>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/1.jpg" alt="img01" />
+							<h3 class="item__title"> Best Girl
+							<div class="item__details">
+
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/2.jpg" alt="img02" />
+							<h3 class="item__title"> Best girl in white
+							<div class="item__details">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/3.jpg" alt="img03" />
+							<h3 class="item__title"> Best Second RP Girl
+							<div class="item__details">
+
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/4.jpg" alt="img04" />
+							<h3 class="item__title"> Best Boi
+							<div class="item__details">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/5.jpg" alt="img05" />
+							<h3 class="item__title"> ITS ME DIO!
+							<div class="item__details">
+							</div>
+						</div>
+					</div>
+		
+				</div>
+				<div class="stack">
+					<h2 class="stack-title"><a href="#" data-text="Landscape"><span>Bana Çizdiklerin!</span></a></h2>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/1.jpg" alt="img01" />
+							<h3 class="item__title">Austin flannel salvia <span class="item__date">05/05/2015</span></h3>
+							<div class="item__details">
+
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/2.jpg" alt="img02" />
+							<h3 class="item__title">Brunch vegan pickled cred <span class="item__date">05/05/2015</span></h3>
+							<div class="item__details">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /stacks-wrapper -->
+		</div>
+		<!-- /stacks -->
+		<img class="loader" src="img/three-dots.svg" width="60" alt="Loader image" />
+	</div>
+	<!-- /container -->
+	<!-- Flickity v1.0.0 http://flickity.metafizzy.co/ -->
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

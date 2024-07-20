@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bebeğim</title>
+	<meta name="description" content="A photography-inspired website layout with an expanding stack slider and a background image tilt effect" />
+	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<embed src="myheart.mp3" autostart="true" loop="true" width="0" height="0" />
+	<div class="container">
+		<div class="hero">
+			<div class="hero__back hero__back--static"></div>
+			<div class="hero__back hero__back--mover"></div>
+			<div class="hero__front"></div>
+		</div>
+		<header class="codrops-header">
+			<h1 class="codrops-title">Yağmur Elif Ulupınar <span></span></h1>
+			<nav class="menu">
+				<a class="menu__item" href="#"><span></span></a>
+				<a class="menu__item menu__item--current" href="#"><span></span></a>
+				<a class="menu__item" href="#"><span></span></a>
+			</nav>
+		</header>
+		<div class="stack-slider">
+			<div class="stacks-wrapper">
+				<div class="stack">
+					<h2 class="stack-title"><a href="#" data-text="Yağmur"><span>Güzel Hanımefendi</span></a></h2>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/1.jpg" alt="img01" />
+							<h3 class="item__title"> <span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Favori 1</span></li>
+									<li><i class="icon icon-focal_length"></i><span>Yan Hesabın Ana Resmi</span></li>
+									<li><i class="icon icon-aperture"></i><span>10/10</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>Saatlerce bakabilirim</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/2.jpg" alt="img02" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Favori 2</span></li>
+									<li><i class="icon icon-focal_length"></i><span>TATLI KISA SAÇ?!</span></li>
+									<li><i class="icon icon-aperture"></i><span>10/10</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>Saatlerce bakabilirim</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/3.jpg" alt="img03" />
+							<h3 class="item__title"> <span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Favori 3 </span></li>
+									<li><i class="icon icon-focal_length"></i><span>İlk ve son gözlüklü fotoğrafı..</span></li>
+									<li><i class="icon icon-aperture"></i><span>10/10</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>Saatlerce bakabilirim</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/4.jpg" alt="img04" />
+							<h3 class="item__title"> <span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Favori 4</span></li>
+									<li><i class="icon icon-focal_length"></i><span>Telefonumun gururlu ana resmi</span></li>
+									<li><i class="icon icon-aperture"></i><span>10/10</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>Saatlerce bakabilirim</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type1/5.jpg" alt="img05" />
+							<h3 class="item__title"> <span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Favori 5</span></li>
+									<li><i class="icon icon-focal_length"></i><span>SON ALDIĞIM FOTO!</span></li>
+									<li><i class="icon icon-aperture"></i><span>10/10</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>Saatlerce bakabilirim</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="stack">
+					<h2 class="stack-title"><a href="#" data-text="Landscape"><span>Manzara</span></a></h2>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/1.jpg" alt="img01" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Paraşütçüler!</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/2.jpg" alt="img02" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>O kadar estetik bir foto ki renkli yaptım!</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/3.jpg" alt="img03" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Karlı Gün</span></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/4.jpg" alt="img04" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Bebeğimin Harika Zevki</span></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__content">
+							<img src="img/type3/5.jpg" alt="img05" />
+							<h3 class="item__title"><span class="item__date">03/05/2022</span></h3>
+							<div class="item__details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>En Güzel Manzara</span></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- /stacks-wrapper -->
+		</div>
+		<!-- /stacks -->
+		<img class="loader" src="img/three-dots.svg" width="60" alt="Loader image" />
+	</div>
+	<!-- /container -->
+	<!-- Flickity v1.0.0 http://flickity.metafizzy.co/ -->
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
